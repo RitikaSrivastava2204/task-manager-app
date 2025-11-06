@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager APP</title>
+    <link rel="stylesheet" href="./css/design.css">
+</head>
+<body>
+    <header>
+        <h1>Task Manager App</h1>
+    </header>
+    <main>
+        <div>
+            <p>Input Details</p>
+            <form action="" id="input-form">
+                <div class="fields">
+                    <label for="">Id</label>
+                    <input type="text">
+                </div>
+                <div class="fields">
+                    <label for="">Name</label>
+                    <input type="text" placeholder="Type your name here">
+                </div>
+                <div class="fields">
+                    <label for="">Description</label>
+                    <textarea rows="7" cols="30"></textarea>
+                </div>
+                <div class="fields">
+                    <label for="">Completion date</label>
+                    <input type="date">
+                </div>
+            </form>
+        </div>
+        <div id="buttons">
+            <button>Add</button>
+            <button>Delete</button>
+            <button>Update</button>
+            <button>Search</button>
+            <button>Save</button>
+            <button>Load</button>
+            <button>Save to DB</button>
+            <button>Clear</button>
+
+        </div>
+        <hr>
+        <div id="output">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Completion Date</th>
+                        <th>Status</th>
+                        <th>Operations</th>
+                    </tr>
+                </thead>
+            </table>
+
+        </div>
+    </main>
+    <footer>
+        <p>Powered by brain mentors</p>
+
+    </footer>   
+</body>
+</html>
