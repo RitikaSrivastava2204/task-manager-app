@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager APP</title>
+    <script src="scripts/controllers/task-controller.js" type="module"></script>
     <link rel="stylesheet" href="./css/design.css">
 </head>
 <body>
@@ -16,24 +17,24 @@
             <form action="" id="input-form">
                 <div class="fields">
                     <label for="">Id</label>
-                    <input type="text">
+                    <input id="id" type="text">
                 </div>
                 <div class="fields">
                     <label for="">Name</label>
-                    <input type="text" placeholder="Type your name here">
+                    <input id="name" type="text" placeholder="Type your name here">
                 </div>
                 <div class="fields">
                     <label for="">Description</label>
-                    <textarea rows="7" cols="30"></textarea>
+                    <textarea id="desc" rows="7" cols="30"></textarea>
                 </div>
                 <div class="fields">
                     <label for="">Completion date</label>
-                    <input type="date">
+                    <input id="doc" type="date">
                 </div>
             </form>
         </div>
         <div id="buttons">
-            <button>Add</button>
+            <button id="add">Add</button>
             <button>Delete</button>
             <button>Update</button>
             <button>Search</button>
@@ -56,6 +57,9 @@
                         <th>Operations</th>
                     </tr>
                 </thead>
+                <tbody id="records">
+
+                </tbody>
             </table>
 
         </div>
