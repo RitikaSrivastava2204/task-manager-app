@@ -5,6 +5,7 @@ class Task{
         this.desc = desc;
         this.doc = doc;
         this.status = status;
+        this.isDeleted = false; //not read
     }
 }
 export default Task;

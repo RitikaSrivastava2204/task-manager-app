@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager APP</title>
-    <script src="scripts/controllers/task-controller.js" type="module"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/design.css">
 </head>
+    <script src="scripts/controllers/task-controller.js" type="module"></script>  
 <body>
     <header>
         <h1>Task Manager App</h1>
     </header>
     <main>
         <div>
-            <p>Input Details</p>
+            <p>Input Details </p>
             <form action="" id="input-form">
                 <div class="fields">
                     <label for="">Id</label>
@@ -33,10 +34,17 @@
                 </div>
             </form>
         </div>
+        <div id="count-message">
+            <h3>
+                Total Records <span id="total-records"></span>   
+                Mark Records <span id="mark-records"></span>   
+                Unmark Records <span id="unmark-records"></span>
+            </h3>
+        </div>
         <div id="buttons">
             <button id="add">Add</button>
-            <button>Delete</button>
-            <button>Update</button>
+            <button id="remove">Delete</button>
+            <button id="update">Update</button>
             <button>Search</button>
             <button>Save</button>
             <button>Load</button>
@@ -58,6 +66,7 @@
                     </tr>
                 </thead>
                 <tbody id="records">
+                    <!-- all tasks will be created dynamically -->
 
                 </tbody>
             </table>
